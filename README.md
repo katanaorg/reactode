@@ -1,0 +1,1 @@
+# Boilerplate code for React - Nodejs SSR and CSR app

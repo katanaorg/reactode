@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "esnext",
+    "jsx": "react",
+    "pretty": true,
+    "target": "es5",
+  },
+  "exclude": ["node_modules", "scripts"]
+}

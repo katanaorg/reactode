@@ -1,0 +1,27 @@
+{
+    "presets": [
+       [
+           "@babel/env",
+           {
+               // "useBuiltIns": "usage" : this will allow the addition of  polyfills based on the code written. 
+               // It is an experimental feature, can use it later.
+               "useBuiltIns": "entry",
+               "corejs": "3.0.0",
+               "targets": {
+                   "browsers": ">1%, not dead, not ie 11, not op_mini all",
+                   "node": 10
+               }
+           }
+        ], 
+        "@babel/react"
+    ],
+    "plugins" : [
+        // Can use "babel-plugin-import" and choose to load material-ui components directly instead of loading all the components at once.
+        // https://www.npmjs.com/package/babel-plugin-import
+        "dynamic-import-node",
+        "css-modules-transform",
+        "@babel/transform-runtime",
+        "@babel/proposal-class-properties",
+        "@babel/syntax-dynamic-import"
+    ]
+}
